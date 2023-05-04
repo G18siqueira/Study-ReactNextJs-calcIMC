@@ -1,0 +1,33 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.button {
+    flex: 1;
+    color: $white;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border: none;
+    opacity: .9;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &-calc {
+        background-color: $green;
+        color: $black;
+        font-weight: bolder;
+    }
+
+    &-clear {
+        background-color: $gray;
+    }
+
+    &-back {
+        background-color: $green;
+        color: $black;
+        max-width: 15rem;
+    }
+}

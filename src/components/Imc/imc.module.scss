@@ -1,0 +1,28 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.imc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-content {
+        min-width: 50rem;
+        min-height: 40rem;
+        padding: 4rem;
+        background-color: rgba($black2, .5);
+        border: .1rem solid rgba($green, .5);
+
+        h2 {
+            text-align: center;
+            margin: 0 0 2rem;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+  font-family: $fontFamily;
+}
+
+html {
+  font-size: 58%;
+  overflow-x: hidden;
+
+  @include device-up(md) {
+    font-size: 60%;
+  }
+
+  @include device-up(lg) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $black;
+  color: $white;
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 10rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+.p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+
+
+// CONTAINER
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @include device-up(lg) {
+    padding: 0;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: 960px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1170px;
+  }
+}

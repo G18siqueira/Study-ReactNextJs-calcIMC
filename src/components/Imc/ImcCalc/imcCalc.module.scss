@@ -1,0 +1,35 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.imc-calc {
+    .form {
+        &-inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+            margin: 0 0 4rem;
+        }
+
+        &-control {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            label {
+                font-weight: bold;
+                margin: 0 0 .6rem;
+                color: $gray2;
+            }
+
+            input {
+                padding: 2rem 1rem;
+            }
+        }
+
+        &-action-control {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}
